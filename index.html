@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="tien">
+<select id="c">
+    <option value="vnd">vnd</option>
+    <option value="usa">usa</option>
+</select>
+<select id="d">
+    <option value="vnd">vnd</option>
+    <option value="usa">usa</option>
+</select>
+<button onclick="doiTien()">doi tien</button>
+<script>
+    function doiTien() {
+        let doiTien1 = document.getElementById('tien').value;
+        let o1 = document.getElementById('c').value;
+        let o2 = document.getElementById('d').value;
+        if(o1==o2){
+            alert(doiTien1)
+        }
+        if(o1=="vnd"&&o2=="usa"){
+            alert(doiTien1/24000)
+        }
+        if (o1=="usa"&&o2=="vnd"){
+            alert(doiTien1*24000)
+        }
+
+    }
+
+</script>
+
+</body>
+</html>
